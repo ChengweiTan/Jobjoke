@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+<link href='http://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<script src="http://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/loginFontStyle.css" />
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<script>
+$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+			$('.letter-container h3 a span').css("width","180px");
+			$('.letter-container h3 a span').css("height","180px");
+			$('.letter-container h3 a span').css("line-height","180px");
+			$('.letter-container h3 a span').css("font-size","90px");
+	  		<!--$('.login-form').remove();-->
+		});
+	});
+	
+	$('.avtar').on('click',function(){
+		$('.avtar').fadeOut('slow',function(c){
+			var src = $('.avtar img').attr('src');
+			if(src.indexOf('boss') > 0){
+				$('.avtar img').attr('src',"images/worker.png");
+				$('.avtar').fadeIn('slow');
+			}else{
+				$('.avtar img').attr('src',"images/boss.png");
+				$('.avtar').fadeIn('slow');
+			}
+			
+		});
+	});
+	
+	$('#letter-container').on('click',function(){
+		if($('.login-form').css('display') != "block"){
+			$('.letter-container h3 a span').css("width","90px");
+			$('.letter-container h3 a span').css("height","90px");
+			$('.letter-container h3 a span').css("line-height","90px");
+			$('.letter-container h3 a span').css("font-size","45px");
+			$('.login-form').fadeIn('slow');
+		}
+	});
+});
+
+</script>
+ <!--SIGN UP-->
+ <!--<h1>Job-Joke</h1>-->
+ 
+ <div class="container">
+            <div id="letter-container" class="letter-container">
+				<h3><a href="#">Job-Joke</a></h3>
+			</div>
+		
+			<script type="text/javascript" src="js/jquery.lettering.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$("#letter-container h3 a").lettering();
+				});
+			</script>
+        </div>
+ 
+<div class="login-form">
+	<div class="close"> </div>
+		<div class="head-info">
+			<label class="lbl-1"> </label>
+			<label class="lbl-2"> </label>
+			<label class="lbl-3"> </label>
+		</div>
+			<div class="clear"> </div>
+	<div class="avtar">
+		<img src="images/worker.png" />
+	</div>
+			<form>
+					<input type="text" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+						<div class="key">
+					<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+						</div>
+			</form>
+	<div class="signin">
+		<input type="submit" value="Login" >
+	</div>
+</div>
+
+</body>
+</html>
